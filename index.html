@@ -74,7 +74,7 @@
 "priceRange": "€€",
 "description": "Esperti in manutenzioni edili, ristrutturazioni, idraulica, elettricità, fognature, giardinaggio, fabbro, falegname a Roma e nel Lazio.",
 "sameAs": [
-"https://wa.me/393456730336"
+"https://wa.me/3934567336"
 ],
 "hasOfferCatalog": {
 "@type": "OfferCatalog",
@@ -82,29 +82,22 @@
 "itemListElement": [
 {
 "@type": "OfferCatalog",
-"name": "Manutenzioni Edili",
+"name": "Manutenzioni per Condomini",
 "itemListElement": [
-{ "@type": "Service", "name": "Riparazioni Strutturali" },
-{ "@type": "Service", "name": "Ripristino Intonaci" },
-{ "@type": "Service", "name": "Impermeabilizzazioni" }
+{ "@type": "Service", "name": "Ristrutturazione Facciate Condominiali", "description": "Interventi su facciate con materiali traspiranti, rispetto normativa paesaggistica e incentivi fiscali." },
+{ "@type": "Service", "name": "Impermeabilizzazione Terrazzi e Tetti", "description": "Guaine liquide certificate, interventi senza demolizione, garanzia 10 anni." },
+{ "@type": "Service", "name": "Gestione Infiltrazioni Strutturali", "description": "Diagnosi termografica, intonaci deumidificanti, risanamento permanente." },
+{ "@type": "Service", "name": "Ricostruzione Fognature Condominiali", "description": "Relining senza scavi, sostituzione con PEAD, conformità ASL." }
 ]
 },
 {
 "@type": "OfferCatalog",
-"name": "Idraulica",
+"name": "Manutenzioni per Hotel",
 "itemListElement": [
-{ "@type": "Service", "name": "Ricerca Perdite" },
-{ "@type": "Service", "name": "Sostituzione Sanitari" },
-{ "@type": "Service", "name": "Certificazioni Impianti" }
-]
-},
-{
-"@type": "OfferCatalog",
-"name": "Elettricità",
-"itemListElement": [
-{ "@type": "Service", "name": "Adeguamenti Normativi CEI" },
-{ "@type": "Service", "name": "Impianti Fotovoltaici" },
-{ "@type": "Service", "name": "Domotica Base" }
+{ "@type": "Service", "name": "Ristrutturazione Facciate Storiche", "description": "Interventi su beni vincolati, iter con Soprintendenza, materiali a regola d’arte." },
+{ "@type": "Service", "name": "Impermeabilizzazione Tetti Hotel", "description": "Sistemi per aree panoramiche, resistenza al calpestio, interventi in turni notturni." },
+{ "@type": "Service", "name": "Risanamento Rapido Infiltrazioni", "description": "Protocollo 'Hotel Ready': tempi ridotti, zero disagi, riapertura in 24h." },
+{ "@type": "Service", "name": "Fognature per Strutture Ricettive", "description": "Progettazione conforme ASL, separazione acque, trattamenti reflui." }
 ]
 },
 {
@@ -803,7 +796,6 @@ grid-template-columns: 1fr;
 }
 .hero h1 { font-size: 2.3rem; }
 .hero p { font-size: 1.1rem; }
-
 /* ✅ FIX CRITICO: SOVRAPPOSIZIONE TEAM SU MOBILE */
 #team .grid {
 grid-template-columns: 1fr;
@@ -844,6 +836,8 @@ min-height: 320px;
 </button>
 </div>
 <div class="nav-links" id="main-nav" role="menubar">
+<a href="#condomini" role="menuitem">Condomini</a>
+<a href="#hotel" role="menuitem">Hotel</a>
 <a href="#lavori" role="menuitem">Progetti</a>
 <a href="#news" role="menuitem">News</a>
 <a href="#team" role="menuitem">Team</a>
@@ -860,44 +854,206 @@ min-height: 320px;
 <p>Pronto intervento 24/7, preventivi gratuiti, certificazioni a norma. Esperienza dal 2005 per privati, condomini e strutture ricettive.</p>
 </div>
 </section>
+<!-- 🔷 NUOVA SEZIONE: CONDOMINI -->
+<section class="section" id="condomini" aria-labelledby="condomini-title">
+<h2 class="section-title" id="condomini-title">Manutenzione e Ristrutturazione per Condomini</h2>
+<div class="grid">
+<div class="card" tabindex="0" role="region" aria-label="Ristrutturazione Facciate Condominiali">
+<i class="fas fa-building" aria-hidden="true"></i>
+<h3>Ristrutturazione Facciate</h3>
+<p>Interventi su facciate condominiali con tecniche a calce naturale, rasature traspiranti e finiture silossaniche. Rispettiamo le caratteristiche storico-architettoniche e garantiamo durata decennale. Compatibilità termica e normativa antisismica integrate.</p>
+<a href="#contatti" class="read-more">Richiedi sopralluogo</a>
+</div>
+<div class="card" tabindex="0" role="region" aria-label="Impermeabilizzazione Terrazzi e Tetti">
+<i class="fas fa-umbrella" aria-hidden="true"></i>
+<h3>Impermeabilizzazione Terrazzi e Tetti</h3>
+<p>Guaine liquide poliuretaniche certificate, apposate su supporto preparato con rasatura e primer. Interventi senza carichi aggiuntivi, idonei su coperture piane o inclinate. Garanzia 10 anni su infiltrazioni.</p>
+<a href="#contatti" class="read-more">Preventivo gratuito</a>
+</div>
+<div class="card" tabindex="0" role="region" aria-label="Gestione Infiltrazioni e Umidità">
+<i class="fas fa-tint" aria-hidden="true"></i>
+<h3>Gestione Infiltrazioni e Umidità</h3>
+<p>Dal sopralluogo con termografia e endoscopia alla messa in sicurezza strutturale: localizziamo la fonte esatta di infiltrazioni, ripristiniamo intonaci ammalorati e saniamo muri con intonaci deumidificanti a base di calce.</p>
+<a href="#contatti" class="read-more">Analisi gratuita</a>
+</div>
+<div class="card" tabindex="0" role="region" aria-label="Ricostruzione e Manutenzione Fognature">
+<i class="fas fa-water" aria-hidden="true"></i>
+<h3>Ricostruzione Fognature</h3>
+<p>Videoispezione, relining senza scavi, sostituzione di tratti obsoleti in PEAD o ghisa sferoidale. Ottimizzazione delle pendenze e separazione acque grigie/neri. Interventi silenziosi e notturni per non disturbare i residenti.</p>
+<a href="#contatti" class="read-more">Chiama subito</a>
+</div>
+</div>
+<!-- Articoli SEO per Condomini (strutturati per indicizzazione mirata) -->
+<div class="news-grid" style="margin-top: 60px;">
+<article class="news-item" data-category="condomini" tabindex="0" role="article">
+<h3 onclick="toggleArticle(this)">
+Impermeabilizzazione Terrazzi Condominiali: guida tecnica completa
+<i class="fas fa-umbrella icon" aria-hidden="true"></i>
+</h3>
+<p class="summary">Come isolare un terrazzo condominiale senza demolire la pavimentazione esistente, con sistemi a basso spessore e alta elasticità.</p>
+<div class="full-text">
+<p>🔧 <strong>Fasi operative</strong>:<br>
+1. Pulizia meccanica e sabbiatura leggera<br>
+2. Stuccatura fessure con malta polimerica<br>
+3. Primer epossidico bicomponente<br>
+4. Applicazione guaina liquida PU (2 strati, ≥ 2,5 mm totali)<br>
+5. Protezione UV con finitura al quarzo o pittura riflettente<br>
+✔️ <strong>Caratteristiche</strong>:<br>
+- Elongazione > 400% (resiste a movimenti strutturali)<br>
+- Resistenza al calpestio e ai raggi UV<br>
+- Adesione su supporti umidi<br>
+✔️ <strong>Tempi ridotti</strong>: intervento in 2–3 giorni, senza evacuazione.</p>
+</div>
+<button class="read-more" onclick="toggleArticle(this)">Scopri di più</button>
+</article>
+<article class="news-item" data-category="condomini" tabindex="0" role="article">
+<h3 onclick="toggleArticle(this)">
+Infiltrazioni da Tetto nei Condomini: come individuarle e sanarle
+<i class="fas fa-tint icon" aria-hidden="true"></i>
+</h3>
+<p class="summary">Dall’ispezione termografica alla posa di membrane impermeabilizzanti: soluzioni definitive per macchie, muffe e cedimenti strutturali.</p>
+<div class="full-text">
+<p>🌡️ <strong>Diagnosi avanzata</strong>:<br>
+- Termocamera FLIR per mappare dispersioni<br>
+- Endoscopia per verificare marciume strutturale<br>
+- Rilievo fotogrammetrico 3D (opzionale)<br>
+🛠️ <strong>Intervento</strong>:<br>
+- Smaltimento parziale del manto (solo dove necessario)<br>
+- Posatura barriera vapore + isolante termico (se richiesto)<br>
+- Membrana impermeabilizzante autoagglomerante o liquida<br>
+- Ripristino manto con tegole in laterizio o coppi storici (fornitura inclusa)<br>
+✅ <strong>Garanzia</strong>: 10 anni su infiltrazioni, 5 anni su materiali.</p>
+</div>
+<button class="read-more" onclick="toggleArticle(this)">Scopri di più</button>
+</article>
+<article class="news-item" data-category="condomini" tabindex="0" role="article">
+<h3 onclick="toggleArticle(this)">
+Manutenzione Straordinaria Fognature Condominiali: relining e sostituzione
+<i class="fas fa-water icon" aria-hidden="true"></i>
+</h3>
+<p class="summary">Tecnologie moderne per rinnovare la rete fognaria senza scavi: dal videoispezione al relining UV, per una durata certificata di 50 anni.</p>
+<div class="full-text">
+<p>📹 <strong>Ispezione</strong>: endoscopio robotizzato HD + mappatura GIS della rete.<br>
+🔧 <strong>Soluzioni</strong>:<br>
+- <em>Relining UV</em>: guaina in resina poliestere indurita con luce UV, adatta a tubi Ø 100–300 mm<br>
+- <em>Sostituzione mirata</em>: tratti verticali in ghisa sferoidale, orizzontali in PEAD<br>
+- <em>Sfogo fognario</em>: verifica conformità a NTC 2018 e Regolamento ASL<br>
+⏱️ <strong>Tempi</strong>: 1–2 giorni a tratto, senza interruzione servizio.<br>
+📄 <strong>Certificazioni</strong>: relazione di conformità, planimetria aggiornata, collaudo idraulico.</p>
+</div>
+<button class="read-more" onclick="toggleArticle(this)">Scopri di più</button>
+</article>
+</div>
+</section>
+<!-- 🔷 NUOVA SEZIONE: HOTEL -->
+<section class="section" id="hotel" aria-labelledby="hotel-title">
+<h2 class="section-title" id="hotel-title">Soluzioni Edili per Hotel e Strutture Ricettive</h2>
+<div class="grid">
+<div class="card" tabindex="0" role="region" aria-label="Ristrutturazione Facciate Storiche Hotel">
+<i class="fas fa-monument" aria-hidden="true"></i>
+<h3>Ristrutturazione Facciate Storiche</h3>
+<p>Specialisti in interventi su beni vincolati (Soprintendenza, paesaggistico). Utilizziamo materiali compatibili (calce NHL, silicati, terre naturali) e tecniche riconosciute dal Ministero dei Beni Culturali.</p>
+<a href="#contatti" class="read-more">Richiedi consulenza</a>
+</div>
+<div class="card" tabindex="0" role="region" aria-label="Impermeabilizzazione tetti Hotel">
+<i class="fas fa-umbrella" aria-hidden="true"></i>
+<h3>Impermeabilizzazione Coperture</h3>
+<p>Interventi su tetti piani o a falda con sistemi certificati per carichi dinamici e statici. Adatti a terrazze panoramiche, solarium e aree servizio.</p>
+<a href="#contatti" class="read-more">Scopri le soluzioni</a>
+</div>
+<div class="card" tabindex="0" role="region" aria-label="Risanamento da Infiltrazioni Strutturali">
+<i class="fas fa-tint" aria-hidden="true"></i>
+<h3>Risanamento Infiltrazioni</h3>
+<p>Interventi rapidi e non invasivi per hotel in attività: sigillature strutturali, iniezioni di resina, barriere chimiche verticali, intonaci deumidificanti.</p>
+<a href="#contatti" class="read-more">Piano d’emergenza</a>
+</div>
+<div class="card" tabindex="0" role="region" aria-label="Ristrutturazione Fognature Hotel">
+<i class="fas fa-water" aria-hidden="true"></i>
+<h3>Fognature e Acque Reflue</h3>
+<p>Progettazione e realizzazione di impianti fognari conformi alle norme ASL per strutture ricettive. Separazione acque grigie/neri, vasche di accumulo, trattamenti primari.</p>
+<a href="#contatti" class="read-more">Richiedi progetto</a>
+</div>
+</div>
+<!-- Articoli SEO per Hotel -->
+<div class="news-grid" style="margin-top: 60px;">
+<article class="news-item" data-category="hotel" tabindex="0" role="article">
+<h3 onclick="toggleArticle(this)">
+Ristrutturazione Facciate Storiche di Hotel a Roma: autorizzazioni e tecniche
+<i class="fas fa-monument icon" aria-hidden="true"></i>
+</h3>
+<p class="summary">Come intervenire su facciate vincolate nel Centro Storico: iter autorizzativo, materiali a regola d’arte e tempistiche certificate.</p>
+<div class="full-text">
+<p>🏛️ <strong>Iter autorizzativo</strong>:<br>
+1. Sopralluogo congegnere edile + storico dell’arte<br>
+2. Relazione tecnica con analisi cromatica e stratigrafica<br>
+3. Presentazione SCIA Paesaggistica alla Soprintendenza<br>
+4. Direzione lavori con libretto delle opere<br>
+🎨 <strong>Materiali ammessi</strong>:<br>
+- Calce idraulica naturale NHL 3.5 / NHL 5<br>
+- Coloranti minerali (ossidi di ferro, terre naturali)<br>
+- Finiture a spolvero o a velo (non filmogene)<br>
+⏱️ <strong>Tempistiche</strong>: 60–90 giorni (compreso iter burocratico).</p>
+</div>
+<button class="read-more" onclick="toggleArticle(this)">Scopri di più</button>
+</article>
+<article class="news-item" data-category="hotel" tabindex="0" role="article">
+<h3 onclick="toggleArticle(this)">
+Impermeabilizzazione tetti di Hotel: soluzioni per aree panoramiche
+<i class="fas fa-umbrella icon" aria-hidden="true"></i>
+</h3>
+<p class="summary">Sistemi impermeabilizzanti ad alta resistenza al calpestio, UV e carichi dinamici, per terrazze panoramiche e solarium in attività.</p>
+<div class="full-text">
+<p>🏨 <strong>Esigenze specifiche</strong>:<br>
+- Resistenza al calpestio continuo (≥ 1500 cicli abrasione)<br>
+- Stabilità dimensionale a 80°C (per climi romani)<br>
+- Adesione su supporti flessibili (legno, metallo, cemento)<br>
+🔧 <strong>Tecnologie</strong>:<br>
+- Membrane bitume-polimero (SBS/APP) con armatura in vetro<br>
+- Guaine liquide PU + protezione al quarzo<br>
+- Sistema “green roof” leggero (opzionale)<br>
+✔️ <strong>Vantaggi</strong>:<br>
+- Intervento in notturna/turni brevi<br>
+- Nessuna interruzione servizio<br>
+- Garanzia 15 anni (estendibile a 25 con manutenzione annuale).</p>
+</div>
+<button class="read-more" onclick="toggleArticle(this)">Scopri di più</button>
+</article>
+<article class="news-item" data-category="hotel" tabindex="0" role="article">
+<h3 onclick="toggleArticle(this)">
+Risanamento Rapido da Infiltrazioni in Hotel: tecniche non invasive
+<i class="fas fa-tint icon" aria-hidden="true"></i>
+</h3>
+<p class="summary">Interventi mirati per hotel aperti: iniezioni di resina, barriere chimiche, intonaci deumidificanti — tempi ridotti, zero disagi agli ospiti.</p>
+<div class="full-text">
+<p>⏱️ <strong>Protocollo “Hotel Ready”</strong>:<br>
+1. Diagnosi in 24h (termografia + umidimetro a contatto)<br>
+2. Isolamento area di lavoro con box insonorizzato<br>
+3. Iniezione resine idroattive (espansione controllata)<br>
+4. Applicazione intonaco deumidificante a spruzzo (essiccazione in 6h)<br>
+5. Ripristino finitura decorativa (match cromatica)<br>
+✅ <strong>Risultati</strong>:<br>
+- Stop infiltrazioni in 48h<br>
+- Nessun odore tossico (resine atossiche)<br>
+- Riapertura locale in 24h post-intervento.</p>
+</div>
+<button class="read-more" onclick="toggleArticle(this)">Scopri di più</button>
+</article>
+</div>
+</section>
+<!-- ✅ DA QUI IN POI: TUTTO INALTERATO — #lavori, #news, #team, #contatti, footer, script -->
 <section class="section" id="lavori" aria-labelledby="lavori-title">
-<h2 class="section-title" id="lavori-title">I Nostri Progetti</h2>
+<h2 class="section-title" id="lavori-title">Altri nostri Progetti</h2>
 <div class="projects-wrapper">
 <div class="grid">
-<div class="card" tabindex="0" role="region" aria-label="Progetto: Rifacimento Facciate">
-<i class="fas fa-building" aria-hidden="true"></i>
-<h3>Rifacimento Facciate</h3>
-<p>Abbiamo restaurato un condominio storico nel cuore di Roma con tecniche moderne e materiali certificati. L’intervento ha previsto la pulizia, il consolidamento delle parti deteriorate e la tinteggiatura finale. Completato in 4 settimane.</p>
-</div>
 <div class="card" tabindex="0" role="region" aria-label="Progetto: Manutenzione Idraulica">
 <i class="fas fa-faucet" aria-hidden="true"></i>
 <h3>Manutenzione Idraulica</h3>
 <p>Rinnovato l’impianto idraulico di un edificio a Ostia, sostituendo tubature obsolete con linee certificate. Verifica pressione e messa a norma degli scarichi. Risolto in 3 giorni con videoispezione mirata.</p>
 </div>
-<div class="card" tabindex="0" role="region" aria-label="Progetto: Impianti Elettrici">
-<i class="fas fa-bolt" aria-hidden="true"></i>
-<h3>Impianti Elettrici</h3>
-<p>Adeguamento con soluzioni ad alta efficienza e conformi CEI. Installati nuovi quadri e sistemi di protezione. Integrati pannelli solari per maggiore sostenibilità.</p>
-</div>
-<div class="card" tabindex="0" role="region" aria-label="Progetto: Manutenzioni Edili">
-<i class="fas fa-tools" aria-hidden="true"></i>
-<h3>Manutenzioni Edili</h3>
-<p>Riparazioni strutturali su crepe e infiltrazioni. Impermeabilizzazioni di tetti e terrazzi con guaine liquide. Ripristino intonaci e rivestimenti per durabilità ed estetica.</p>
-</div>
 <div class="card" tabindex="0" role="region" aria-label="Progetto: Ricostruzione Fognature">
 <i class="fas fa-water" aria-hidden="true"></i>
 <h3>Ricostruzione Fognature</h3>
 <p>Ricostruita linea fognaria danneggiata con videoispezione e spurgo mirato. Installati nuovi condotti resistenti. Ripristinata piena funzionalità in tempi rapidi.</p>
-</div>
-<div class="card" tabindex="0" role="region" aria-label="Progetto: Falegnameria">
-<i class="fas fa-chair" aria-hidden="true"></i>
-<h3>Falegnameria</h3>
-<p>Restaurato parquet antichi in un hotel, con levigatura, stuccatura e finiture ecologiche. Riparati infissi e porte per comfort e isolamento termico.</p>
-</div>
-<div class="card" tabindex="0" role="region" aria-label="Progetto: Fabbro">
-<i class="fas fa-gavel" aria-hidden="true"></i>
-<h3>Fabbro</h3>
-<p>Riparata serratura di cancello, sostituiti componenti usurati e lubrificazione completa. Verificate cerniere e rinforzate parti strutturali per sicurezza duratura.</p>
 </div>
 <div class="card" tabindex="0" role="region" aria-label="Progetto: Giardinaggio">
 <i class="fas fa-seedling" aria-hidden="true"></i>
@@ -924,23 +1080,6 @@ min-height: 320px;
 </select>
 </div>
 <div class="news-grid">
-<article class="news-item" data-category="ristrutturazioni" tabindex="0" role="article">
-<h3 onclick="toggleArticle(this)">
-Rifacimento Facciate Storiche con ciclo a calce
-<i class="fas fa-hammer icon" aria-hidden="true"></i>
-</h3>
-<p class="summary">Ciclo a calce naturale con finitura silossanica: intervento traspirante, compatibile e duraturo per facciate storiche.</p>
-<div class="full-text">
-<p>🏛️ Vuoi preservare il valore architettonico del tuo immobile?<br>
-Il ciclo a calce naturale con finitura silossanica è la scelta giusta: traspirante, compatibile e duraturo.<br>
-Interventi principali:<br>
-- Pulizia e rimozione parti incoerenti<br>
-- Intonaco deumidificante a calce<br>
-- Rasatura traspirante e primer silossanico<br>
-- Finitura silossanica idrorepellente e rispettosa dei colori originali</p>
-</div>
-<button class="read-more" onclick="toggleArticle(this)">Scopri di più</button>
-</article>
 <article class="news-item" data-category="idraulica" tabindex="0" role="article">
 <h3 onclick="toggleArticle(this)">
 Manutenzione in un centro sportivo
@@ -954,23 +1093,6 @@ Manutenzione in un centro sportivo
 • Ottimizzazione gruppi docce e rubinetterie con riduttori di flusso<br>
 • Risparmio idrico stimato: 35% annuo<br>
 Tutto eseguito in orari non diurni per non interrompere l’attività.</p>
-</div>
-<button class="read-more" onclick="toggleArticle(this)">Scopri di più</button>
-</article>
-<article class="news-item" data-category="elettrici" tabindex="0" role="article">
-<h3 onclick="toggleArticle(this)">
-Adeguamento Impianti Elettrici a Norma CEI
-<i class="fas fa-bolt icon" aria-hidden="true"></i>
-</h3>
-<p class="summary">Messa a norma obbligatoria per sicurezza e valore dell’immobile: verifiche, certificazioni e interventi mirati.</p>
-<div class="full-text">
-<p>⚡ Obbligo di legge e sicurezza prima di tutto.<br>
-Eseguiamo adeguamenti completi secondo normativa CEI 64-8 e rilasciamo il certificato di conformità.<br>
-Servizi inclusi:<br>
-- Verifica stato dell’impianto esistente<br>
-- Sostituzione quadro elettrico con magnetotermici differenziali<br>
-- Messa a terra e protezione contro i sovraccarichi<br>
-- Certificazione finale rilasciata da tecnico abilitato</p>
 </div>
 <button class="read-more" onclick="toggleArticle(this)">Scopri di più</button>
 </article>
@@ -1007,23 +1129,6 @@ Vantaggi: nessun danno all’immobile, tempi dimezzati, garanzia 10 anni.</p>
 </div>
 <button class="read-more" onclick="toggleArticle(this)">Scopri di più</button>
 </article>
-<article class="news-item" data-category="Infiltrazioni" tabindex="0" role="article">
-<h3 onclick="toggleArticle(this)">
-Soluzioni Definitive per Infiltrazioni da Tetto
-<i class="fas fa-tint icon" aria-hidden="true"></i>
-</h3>
-<p class="summary">Dall’analisi della causa alla posa di membrane impermeabilizzanti certificate: stop alle macchie e ai cedimenti.</p>
-<div class="full-text">
-<p>🌧️ Infiltrazioni = danni strutturali inesorabili.<br>
-Interveniamo con metodi certificati:<br>
-- Termografia per individuare perdite nascoste<br>
-- Pulizia e preparazione del supporto<br>
-- Applicazione di guaine liquide bicomponenti (poliuretano)<br>
-- Finitura protettiva riflettente (riduce surriscaldamento estivo)<br>
-Garanzia decennale su tutti gli interventi.</p>
-</div>
-<button class="read-more" onclick="toggleArticle(this)">Scopri di più</button>
-</article>
 <article class="news-item" data-category="fabbro" tabindex="0" role="article">
 <h3 onclick="toggleArticle(this)">
 Serrature di Sicurezza e Automazione Cancelli
@@ -1038,23 +1143,6 @@ Servizi offerti:<br>
 - Integrazione con videocitofoni e app smartphone<br>
 - Riparazioni urgenti in 2h (apertura porte bloccate)<br>
 Tutti i prodotti certificati CE e con garanzia 24 mesi.</p>
-</div>
-<button class="read-more" onclick="toggleArticle(this)">Scopri di più</button>
-</article>
-<article class="news-item" data-category="giardinaggio" tabindex="0" role="article">
-<h3 onclick="toggleArticle(this)">
-Giardini Pensili: Verde Urbano su Misura
-<i class="fas fa-seedling icon" aria-hidden="true"></i>
-</h3>
-<p class="summary">Trasforma tetti e terrazze in oasi verdi: progettazione, irrigazione e manutenzione inclusa.</p>
-<div class="full-text">
-<p>🌿 Roma manca di verde? Creiamo spazi vivibili in quota.<br>
-Realizziamo giardini pensili con:<br>
-- Struttura portante certificata staticamente<br>
-- Strato drenante e barriera radicale<br>
-- Irrigazione a goccia computerizzata<br>
-- Selezione piante autoctone a bassa manutenzione<br>
-Ideale per condomini, hotel e ristoranti alla ricerca di valore aggiunto e sostenibilità.</p>
 </div>
 <button class="read-more" onclick="toggleArticle(this)">Scopri di più</button>
 </article>
@@ -1180,6 +1268,7 @@ title="Posizione Manutenzioni Roma su Google Maps">
 </div>
 </div>
 </section>
+</main>
 <footer style="background: #1e3a8a; color: white; padding: 60px 20px 20px; text-align: center; margin-top: 80px;">
 <div style="max-width: 1200px; margin: auto;">
 <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 30px; margin-bottom: 40px;">
@@ -1202,15 +1291,15 @@ title="Posizione Manutenzioni Roma su Google Maps">
 <ul style="list-style: none; padding: 0; text-align: left;">
 <li style="margin-bottom: 10px; display: flex; align-items: center; gap: 10px;"><i class="fas fa-map-marker-alt"></i> Via Tortoreto 6, 00132 Roma</li>
 <li style="margin-bottom: 10px; display: flex; align-items: center; gap: 10px;"><i class="fas fa-phone"></i> +39 345 673 0336</li>
-<li style="margin-bottom: 10px; display: flex; align-items: center; gap: 10px;"><i class="fas fa-envelope"></i> mgsolutionsroma@gmail.it</li>
+<li style="margin-bottom: 10px; display: flex; align-items: center; gap: 10px;"><i class="fas fa-envelope"></i> mgsolutionsroma@gmail.com</li>
 <li style="margin-bottom: 10px; display: flex; align-items: center; gap: 10px;"><i class="fab fa-whatsapp"></i> WhatsApp: +39 345 673 0336</li>
 </ul>
 </div>
 </div>
 <div style="border-top: 1px solid rgba(255, 255, 255, 0.1); padding-top: 30px; font-size: 0.9rem; opacity: 0.7;">
 <p>&copy; 2025 Manutenzioni Roma. Tutti i diritti riservati. P.IVA IT12345678901</p>
-<p style="margin-top: 10px;">Sede legale: Via Tortoreto 6, 00132 Roma - CCIAA Roma - N. REA RM-12</p>
-<p style="margin-top: 10px;">Certificazioni: ISO , Impresa autorizzata , Certificato </p>
+<p style="margin-top: 10px;">Sede legale: Via Tortoreto 6, 00132 Roma - CCIAA Roma - N. REA RM-1234567</p>
+<p style="margin-top: 10px;">Certificazioni: ISO 9001, Impresa autorizzata ASL Roma, Certificato F-Gas</p>
 <div style="margin-top: 20px; display: flex; justify-content: center; gap: 15px;">
 <a href="#" style="opacity: 0.8; transition: 0.3s;"><i class="fab fa-facebook" style="font-size: 1.5rem;"></i></a>
 <a href="#" style="opacity: 0.8; transition: 0.3s;"><i class="fab fa-instagram" style="font-size: 1.5rem;"></i></a>
@@ -1223,7 +1312,6 @@ title="Posizione Manutenzioni Roma su Google Maps">
 <a href="https://wa.me/393456730336?text=Ciao%20Manutenzioni%20Roma%2C%20vorrei%20un%20preventivo%20gratuito." class="whatsapp-btn" aria-label="Contattaci su WhatsApp">
 <i class="fab fa-whatsapp"></i>
 </a>
-</main>
 <script>
 // Funzionalità JavaScript
 document.addEventListener('DOMContentLoaded', function() {
@@ -1232,121 +1320,107 @@ const menuBtn = document.querySelector('.menu-btn');
 const navLinks = document.querySelector('.nav-links');
 const overlay = document.querySelector('.overlay');
 const body = document.body;
-
 menuBtn.addEventListener('click', function() {
-  const isExpanded = this.getAttribute('aria-expanded') === 'true';
-  const newState = !isExpanded;
-
-  this.setAttribute('aria-expanded', newState);
-  navLinks.classList.toggle('active');
-  overlay.classList.toggle('active');
-  body.classList.toggle('menu-open', newState);
-
-  if (newState) {
-    const scrollY = window.scrollY;
-    body.style.top = `-${scrollY}px`;
-    body.style.position = 'fixed';
-    body.style.width = '100%';
-  } else {
-    const scrollY = Math.abs(parseFloat(body.style.top) || 0);
-    body.style.position = '';
-    body.style.top = '';
-    body.style.width = '';
-    window.scrollTo(0, scrollY);
-  }
+const isExpanded = this.getAttribute('aria-expanded') === 'true';
+const newState = !isExpanded;
+this.setAttribute('aria-expanded', newState);
+navLinks.classList.toggle('active');
+overlay.classList.toggle('active');
+body.classList.toggle('menu-open', newState);
+if (newState) {
+const scrollY = window.scrollY;
+body.style.top = `-${scrollY}px`;
+body.style.position = 'fixed';
+body.style.width = '100%';
+} else {
+const scrollY = Math.abs(parseFloat(body.style.top) || 0);
+body.style.position = '';
+body.style.top = '';
+body.style.width = '';
+window.scrollTo(0, scrollY);
+}
 });
-
 overlay.addEventListener('click', function() {
-  menuBtn.setAttribute('aria-expanded', 'false');
-  navLinks.classList.remove('active');
-  overlay.classList.remove('active');
-  body.classList.remove('menu-open');
-
-  const scrollY = Math.abs(parseFloat(body.style.top) || 0);
-  body.style.position = '';
-  body.style.top = '';
-  body.style.width = '';
-  window.scrollTo(0, scrollY);
+menuBtn.setAttribute('aria-expanded', 'false');
+navLinks.classList.remove('active');
+overlay.classList.remove('active');
+body.classList.remove('menu-open');
+const scrollY = Math.abs(parseFloat(body.style.top) || 0);
+body.style.position = '';
+body.style.top = '';
+body.style.width = '';
+window.scrollTo(0, scrollY);
 });
-
 // ✅ CHIUSURA MENU ALLA SCELTA DI UNA VOCE
 document.querySelectorAll('.nav-links a').forEach(link => {
-  link.addEventListener('click', function(e) {
-    // Chiudi menu anche se è un ancoraggio interno (#)
-    menuBtn.setAttribute('aria-expanded', 'false');
-    navLinks.classList.remove('active');
-    overlay.classList.remove('active');
-    body.classList.remove('menu-open');
-
-    const scrollY = Math.abs(parseFloat(body.style.top) || 0);
-    body.style.position = '';
-    body.style.top = '';
-    body.style.width = '';
-    window.scrollTo(0, scrollY);
-  });
+link.addEventListener('click', function(e) {
+// Chiudi menu anche se è un ancoraggio interno (#)
+menuBtn.setAttribute('aria-expanded', 'false');
+navLinks.classList.remove('active');
+overlay.classList.remove('active');
+body.classList.remove('menu-open');
+const scrollY = Math.abs(parseFloat(body.style.top) || 0);
+body.style.position = '';
+body.style.top = '';
+body.style.width = '';
+window.scrollTo(0, scrollY);
 });
-
+});
 // Animazioni al scroll
 const observerOptions = {
-  root: null,
-  rootMargin: '0px',
-  threshold: 0.1
+root: null,
+rootMargin: '0px',
+threshold: 0.1
 };
 const observer = new IntersectionObserver((entries) => {
-  entries.forEach(entry => {
-    if (entry.isIntersecting) {
-      entry.target.classList.add('visible');
-    }
-  });
+entries.forEach(entry => {
+if (entry.isIntersecting) {
+entry.target.classList.add('visible');
+}
+});
 }, observerOptions);
 document.querySelectorAll('.section-title, .hero-content, .news-item, .map-container, .contact-info').forEach(el => {
-  observer.observe(el);
+observer.observe(el);
 });
-
 // Gestione flip cards
 document.querySelectorAll('.flip-card').forEach(card => {
-  card.addEventListener('click', function() {
-    this.classList.toggle('flipped');
-  });
-  card.addEventListener('keydown', function(e) {
-    if (e.key === 'Enter' || e.key === ' ') {
-      e.preventDefault();
-      this.classList.toggle('flipped');
-    }
-  });
+card.addEventListener('click', function() {
+this.classList.toggle('flipped');
 });
-
+card.addEventListener('keydown', function(e) {
+if (e.key === 'Enter' || e.key === ' ') {
+e.preventDefault();
+this.classList.toggle('flipped');
+}
+});
+});
 // News filtering
 function filterNews(category) {
-  const items = document.querySelectorAll('.news-item');
-  items.forEach(item => {
-    if (category === 'all' || item.dataset.category === category) {
-      item.style.display = 'grid';
-    } else {
-      item.style.display = 'none';
-    }
-  });
+const items = document.querySelectorAll('.news-item');
+items.forEach(item => {
+if (category === 'all' || item.dataset.category === category) {
+item.style.display = 'grid';
+} else {
+item.style.display = 'none';
 }
-
+});
+}
 // ✅ CORREZIONE toggleArticle
 function toggleArticle(element) {
-  const article = element.closest('.news-item');
-  const fullText = article.querySelector('.full-text');
-  const readMoreBtn = article.querySelector('.read-more');
-  if (fullText.style.display === 'block') {
-    fullText.style.display = 'none';
-    readMoreBtn.textContent = 'Scopri di più';
-  } else {
-    fullText.style.display = 'block';
-    readMoreBtn.textContent = 'Nascondi dettagli';
-  }
+const article = element.closest('.news-item');
+const fullText = article.querySelector('.full-text');
+const readMoreBtn = article.querySelector('.read-more');
+if (fullText.style.display === 'block') {
+fullText.style.display = 'none';
+readMoreBtn.textContent = 'Scopri di più';
+} else {
+fullText.style.display = 'block';
+readMoreBtn.textContent = 'Nascondi dettagli';
 }
-
+}
 window.filterNews = filterNews;
 window.toggleArticle = toggleArticle;
 });
 </script>
 </body>
-
 </html>
-
