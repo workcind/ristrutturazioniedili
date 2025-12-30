@@ -249,7 +249,6 @@ color: white;
 text-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
 animation: float 4.5s ease-in-out infinite;
 }
-/* ✅ LOGO AGGIORNATO: gradiente rosso-giallo, più accattivante */
 .logo {
 font-size: 3.5rem;
 font-weight: 800;
@@ -742,7 +741,6 @@ transition: var(--transition-fast);
 transform: scale(1.1) rotate(12deg);
 background: #128C7E;
 }
-/* ✅ FIX TEAM SU MOBILE: evita sovrapposizione flip-card */
 @media (max-width: 768px) {
 header { padding: 90px 15px 60px; }
 .header-logo-wrapper { gap: 12px; }
@@ -780,7 +778,6 @@ backdrop-filter: blur(10px);
 animation: slideIn 0.4s ease;
 z-index: 1001;
 }
-/* ✅ GARANTISCI CHE I LINK SIANO CLICCABILI E CHIUDANO IL MENU */
 .nav-links.active a {
 padding: 14px 0;
 display: block;
@@ -796,7 +793,6 @@ grid-template-columns: 1fr;
 }
 .hero h1 { font-size: 2.3rem; }
 .hero p { font-size: 1.1rem; }
-/* ✅ FIX CRITICO: SOVRAPPOSIZIONE TEAM SU MOBILE */
 #team .grid {
 grid-template-columns: 1fr;
 gap: 24px;
@@ -805,7 +801,6 @@ gap: 24px;
 width: 100%;
 max-width: 360px;
 margin: 0 auto;
-/* Rimuovi perspective globale su mobile per evitare clipping errato */
 perspective: none;
 }
 .flip-card .flip-inner {
@@ -816,7 +811,6 @@ min-height: 320px;
 </style>
 </head>
 <body>
-<!-- Skip to content for a11y -->
 <a href="#main-content" class="skip-link">Vai al contenuto principale</a>
 <header>
 <div class="header-logo-wrapper">
@@ -854,7 +848,6 @@ min-height: 320px;
 <p>Pronto intervento 24/7, preventivi gratuiti, certificazioni a norma. Esperienza dal 2005 per privati, condomini e strutture ricettive.</p>
 </div>
 </section>
-<!-- 🔷 NUOVA SEZIONE: CONDOMINI -->
 <section class="section" id="condomini" aria-labelledby="condomini-title">
 <h2 class="section-title" id="condomini-title">Manutenzione e Ristrutturazione per Condomini</h2>
 <div class="grid">
@@ -883,7 +876,6 @@ min-height: 320px;
 <a href="#contatti" class="read-more">Chiama subito</a>
 </div>
 </div>
-<!-- Articoli SEO per Condomini (strutturati per indicizzazione mirata) -->
 <div class="news-grid" style="margin-top: 60px;">
 <article class="news-item" data-category="condomini" tabindex="0" role="article">
 <h3 onclick="toggleArticle(this)">
@@ -945,7 +937,6 @@ Manutenzione Straordinaria Fognature Condominiali: relining e sostituzione
 </article>
 </div>
 </section>
-<!-- 🔷 NUOVA SEZIONE: HOTEL -->
 <section class="section" id="hotel" aria-labelledby="hotel-title">
 <h2 class="section-title" id="hotel-title">Soluzioni Edili per Hotel e Strutture Ricettive</h2>
 <div class="grid">
@@ -974,7 +965,6 @@ Manutenzione Straordinaria Fognature Condominiali: relining e sostituzione
 <a href="#contatti" class="read-more">Richiedi progetto</a>
 </div>
 </div>
-<!-- Articoli SEO per Hotel -->
 <div class="news-grid" style="margin-top: 60px;">
 <article class="news-item" data-category="hotel" tabindex="0" role="article">
 <h3 onclick="toggleArticle(this)">
@@ -1040,28 +1030,72 @@ Risanamento Rapido da Infiltrazioni in Hotel: tecniche non invasive
 </article>
 </div>
 </section>
-<!-- ✅ DA QUI IN POI: TUTTO INALTERATO — #lavori, #news, #team, #contatti, footer, script -->
+<!-- 🔁 SEZIONE #lavori AGGIORNATA con le tue 6 immagini -->
 <section class="section" id="lavori" aria-labelledby="lavori-title">
-<h2 class="section-title" id="lavori-title">Altri nostri Progetti</h2>
-<div class="projects-wrapper">
-<div class="grid">
-<div class="card" tabindex="0" role="region" aria-label="Progetto: Manutenzione Idraulica">
-<i class="fas fa-faucet" aria-hidden="true"></i>
-<h3>Manutenzione Idraulica</h3>
-<p>Rinnovato l’impianto idraulico di un edificio a Ostia, sostituendo tubature obsolete con linee certificate. Verifica pressione e messa a norma degli scarichi. Risolto in 3 giorni con videoispezione mirata.</p>
-</div>
-<div class="card" tabindex="0" role="region" aria-label="Progetto: Ricostruzione Fognature">
-<i class="fas fa-water" aria-hidden="true"></i>
-<h3>Ricostruzione Fognature</h3>
-<p>Ricostruita linea fognaria danneggiata con videoispezione e spurgo mirato. Installati nuovi condotti resistenti. Ripristinata piena funzionalità in tempi rapidi.</p>
-</div>
-<div class="card" tabindex="0" role="region" aria-label="Progetto: Giardinaggio">
-<i class="fas fa-seedling" aria-hidden="true"></i>
-<h3>Giardinaggio</h3>
-<p>Creato un giardino zen con arbusti ornamentali, percorsi in ghiaia, irrigazione automatica e illuminazione scenografica per un ambiente armonioso e rilassante.</p>
-</div>
-</div>
-</div>
+  <h2 class="section-title" id="lavori-title">Altri nostri Progetti</h2>
+  <div class="projects-wrapper">
+    <div class="grid">
+      <!-- Card 1: Impianti Elettrici -->
+      <div class="card" tabindex="0" role="region" aria-label="Progetto: Impianti Elettrici">
+        <picture>
+          <source media="(max-width: 768px)" srcset="images/impianti-elettrici-roma-mobile.webp">
+          <img src="images/impianti-elettrici-roma.webp" alt="Installazione e manutenzione di impianti elettrici in un appartamento a Roma" loading="lazy" width="1920" height="1080">
+        </picture>
+        <h3>Impianti Elettrici</h3>
+        <p>Riparazione, messa in sicurezza e aggiornamento di impianti elettrici in abitazioni e locali commerciali. Conformità alle normative vigenti.</p>
+      </div>
+
+      <!-- Card 2: Impermeabilizzazione Tetto -->
+      <div class="card" tabindex="0" role="region" aria-label="Progetto: Impermeabilizzazione Tetto">
+        <picture>
+          <source media="(max-width: 768px)" srcset="images/impermeabilizzazione-tetto-roma-mobile.webp">
+          <img src="images/impermeabilizzazione-tetto-roma.webp" alt="Impermeabilizzazione di un tetto a Roma con guaine liquide certificate" loading="lazy" width="1920" height="1080">
+        </picture>
+        <h3>Impermeabilizzazione Tetto</h3>
+        <p>Interventi su tetti piani e inclinati con sistemi certificati, senza demolizione e con garanzia di 10 anni.</p>
+      </div>
+
+      <!-- Card 3: Ristrutturazione Facciata Condominio -->
+      <div class="card" tabindex="0" role="region" aria-label="Progetto: Ristrutturazione Facciata Condominio">
+        <picture>
+          <source media="(max-width: 768px)" srcset="images/ristrutturazione-facciata-condominio-roma-mobile.webp">
+          <img src="images/ristrutturazione-facciata-condominio-roma.webp" alt="Ristrutturazione della facciata di un condominio a Roma con materiali traspiranti" loading="lazy" width="1920" height="1080">
+        </picture>
+        <h3>Ristrutturazione Facciata Condominio</h3>
+        <p>Restauro e manutenzione straordinaria di facciate condominiali, rispettando le caratteristiche architettoniche e le normative paesaggistiche.</p>
+      </div>
+
+      <!-- Card 4: Manutenzione Condominio -->
+      <div class="card" tabindex="0" role="region" aria-label="Progetto: Manutenzione Condominio">
+        <picture>
+          <source media="(max-width: 768px)" srcset="images/manutenzione-condominio-roma-mobile.webp">
+          <img src="images/manutenzione-condominio-roma.webp" alt="Manutenzione ordinaria e straordinaria di un condominio a Roma" loading="lazy" width="1920" height="1080">
+        </picture>
+        <h3>Manutenzione Condominio</h3>
+        <p>Piano triennale di manutenzione programmata per prevenire guasti strutturali e ridurre costi operativi.</p>
+      </div>
+
+      <!-- Card 5: Ristrutturazione Hotel -->
+      <div class="card" tabindex="0" role="region" aria-label="Progetto: Ristrutturazione Hotel">
+        <picture>
+          <source media="(max-width: 768px)" srcset="images/ristrutturazione-hotel-roma-mobile.webp">
+          <img src="images/ristrutturazione-hotel-roma.webp" alt="Ristrutturazione completa di un hotel a Roma con interventi su facciate e coperture" loading="lazy" width="1920" height="1080">
+        </picture>
+        <h3>Ristrutturazione Hotel</h3>
+        <p>Gestione chiavi in mano di progetti di ristrutturazione per strutture ricettive, con attenzione alla qualità e ai tempi di consegna.</p>
+      </div>
+
+      <!-- Card 6: Riqualificazione Facciata Storica Hotel -->
+      <div class="card" tabindex="0" role="region" aria-label="Progetto: Riqualificazione Facciata Storica Hotel">
+        <picture>
+          <source media="(max-width: 768px)" srcset="images/riqualificazione-facciata-storica-hotel-roma-mobile.webp">
+          <img src="images/riqualificazione-facciata-storica-hotel-roma.webp" alt="Riqualificazione di una facciata storica di un hotel a Roma con materiali naturali" loading="lazy" width="1920" height="1080">
+        </picture>
+        <h3>Riqualificazione Facciata Storica Hotel</h3>
+        <p>Interventi su beni vincolati con tecniche tradizionali e materiali a regola d’arte, conformi alle norme della Soprintendenza.</p>
+      </div>
+    </div>
+  </div>
 </section>
 <section class="section" id="news" aria-labelledby="news-title">
 <h2 class="section-title" id="news-title">News</h2>
@@ -1217,7 +1251,6 @@ Massima trasparenza: preventivo dettagliato e tempi certi.</p>
 <h2 class="section-title" id="contatti-title">Contattaci</h2>
 <div class="contact-container">
 <div class="map-container" aria-label="Posizione su mappa">
-<!-- Google Maps Embed - sostituire con API key reale -->
 <iframe
 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2968.481213058979!2d12.490122315329486!3d41.890251479225375!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x132f61b3e6d8c8c7%3A0x4e5e1f11a3c3d3b3!2sVia%20Tortoreto%2C%206%2C%2000132%20Roma%20RM!5e0!3m2!1sit!2sit!4v1703582175678!5m2!1sit!2sit"
 width="100%"
@@ -1248,7 +1281,7 @@ title="Posizione Manutenzioni Roma su Google Maps">
 <i class="fas fa-envelope" aria-hidden="true"></i>
 <div>
 <h4>Email</h4>
-<p><a href="mailto:info@manutenzioneroma.it">info@manutenzioneroma.it</a></p>
+<p><a href="mailto:mgsolutionsroma@gmail.com">mgsolutionsroma@gmail.com</a></p>
 </div>
 </div>
 <div class="info-item">
@@ -1313,9 +1346,7 @@ title="Posizione Manutenzioni Roma su Google Maps">
 <i class="fab fa-whatsapp"></i>
 </a>
 <script>
-// Funzionalità JavaScript
 document.addEventListener('DOMContentLoaded', function() {
-// ✅ CORREZIONE MENU MOBILE: chiude su click link
 const menuBtn = document.querySelector('.menu-btn');
 const navLinks = document.querySelector('.nav-links');
 const overlay = document.querySelector('.overlay');
@@ -1351,10 +1382,8 @@ body.style.top = '';
 body.style.width = '';
 window.scrollTo(0, scrollY);
 });
-// ✅ CHIUSURA MENU ALLA SCELTA DI UNA VOCE
 document.querySelectorAll('.nav-links a').forEach(link => {
 link.addEventListener('click', function(e) {
-// Chiudi menu anche se è un ancoraggio interno (#)
 menuBtn.setAttribute('aria-expanded', 'false');
 navLinks.classList.remove('active');
 overlay.classList.remove('active');
@@ -1366,7 +1395,6 @@ body.style.width = '';
 window.scrollTo(0, scrollY);
 });
 });
-// Animazioni al scroll
 const observerOptions = {
 root: null,
 rootMargin: '0px',
@@ -1382,7 +1410,6 @@ entry.target.classList.add('visible');
 document.querySelectorAll('.section-title, .hero-content, .news-item, .map-container, .contact-info').forEach(el => {
 observer.observe(el);
 });
-// Gestione flip cards
 document.querySelectorAll('.flip-card').forEach(card => {
 card.addEventListener('click', function() {
 this.classList.toggle('flipped');
@@ -1394,7 +1421,6 @@ this.classList.toggle('flipped');
 }
 });
 });
-// News filtering
 function filterNews(category) {
 const items = document.querySelectorAll('.news-item');
 items.forEach(item => {
@@ -1405,7 +1431,6 @@ item.style.display = 'none';
 }
 });
 }
-// ✅ CORREZIONE toggleArticle
 function toggleArticle(element) {
 const article = element.closest('.news-item');
 const fullText = article.querySelector('.full-text');
